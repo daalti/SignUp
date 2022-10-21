@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+    background-image: url("../images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%) ;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;  
+    text-align: center; 
+    width: 25rem;
+}
+
+h1{
+    margin-top: 3rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.text{
+    margin-top: -1rem;
+    color: white;
+    font-size: 0.915rem;
+    font-weight: 400;
+}
+
+.message-container{
+    margin-top: 2rem;
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0rem 3rem 0rem 3rem;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.form-container{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-text{
+    border-radius: 0.5rem;
+    border: 0.1rem solid;
+    border-color: hsl(246, 25%, 77%);
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem;
+    color:hsl(252, 3%, 33%);
+    font-weight: 600;
+}
+
+.submit-btn{
+    background-color: hsl(154, 59%, 51%);
+    width: 100%;
+    color: white;
+    height: 3rem;
+    border: 0rem solid;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.footer{
+    color: hsl(246, 25%, 77%);;
+    font-weight: 400;
+    font-size: 0.65rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.right-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.error{
+    border: 0.1rem solid;
+    border-color: red;
+    background: url("../images/icon-error.svg") no-repeat scroll 0.4375rem 0.4375rem;
+    background-position: 85% 50%;
+}
+
+.error-text-name, .error-text-last, .error-text-pass, .error-text-mail{
+    margin-top: 0.3rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.6rem;
+    text-align: right;
+    color: red;
+    opacity: 0;
+}
+
+
+
+.opacity{
+    opacity: 100%;
+}
+
+.submit-btn:hover{
+    cursor:pointer;
+}
+
+@media (min-width: 60rem) {
+    .main-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: left;
+        place-content: center;
+        gap: 5rem;
+        width: 60rem;
+        min-height: 100vh;
+    }
+
+    .left-container{
+        margin-top: 5rem;        
+    }
+
+    h1{
+        font-size: 3rem;
+        line-height: 3.2rem;
+    }
+
+    .form-container{
+        padding:2rem;
+    }
+
+    .message-container{
+        text-align: center;
+    }
+
+}
